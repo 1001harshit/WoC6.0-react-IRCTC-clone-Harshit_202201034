@@ -20,8 +20,7 @@ const Menu =styled.div`
 const MenuBar = styled.div`
   position: sticky;
   top: 0;
-  margin: auto;
-  margin:50px;
+  margin: 50px auto;
   z-index: 1000; /* Adjust the z-index as needed */
   border-radius: 25px;
   height: fit-content;
@@ -30,7 +29,7 @@ const MenuBar = styled.div`
   background-color: rgba(0, 0, 0, .4);
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
-  width: 80%; /* Make the navigation bar full width */
+  width: 60%; /* Make the navigation bar full width */
 
   @media (max-width: 768px) {
     flex-direction: column;
@@ -51,7 +50,7 @@ const MenuItem = styled(Link)`
   font-family: sans-serif;
   font-weight: bold;
   padding: 12px 16px;
-  margin: 0 8px;
+  margin: 0 20px;
   position: relative;
   cursor: pointer;
   white-space: nowrap;

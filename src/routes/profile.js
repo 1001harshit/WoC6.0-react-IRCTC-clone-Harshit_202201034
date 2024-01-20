@@ -113,7 +113,7 @@ const Profile = () => {
   }
 
   return (
-    <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh' }}>
+    <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', height: '0' }}>
       <div>
         <h2>Edit Profile</h2>
         <label>

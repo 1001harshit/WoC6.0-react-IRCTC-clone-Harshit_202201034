@@ -36,8 +36,9 @@ export const Auth = () => {
                 await setDoc(doc(db, 'users', user.uid), {
                     displayName,
                     email,
-                    // Add more fields as needed
                   });
+                  console.log('After setDoc');
+
 
                 navigate('/routes/home');
 
