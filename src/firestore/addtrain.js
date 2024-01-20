@@ -1,3 +1,8 @@
+/*This code is additional just for adding data in trains collection in firebse
+*/
+
+
+
 import React from 'react';
 import { collection, addDoc } from 'firebase/firestore';
 import { db } from '../config/firebase';

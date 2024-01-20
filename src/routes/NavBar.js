@@ -27,7 +27,12 @@ const MenuBar = styled.div`
   width: 60%;
 
   @media (max-width: 768px) {
+    margin: 0 0 10px;
     flex-direction: column;
+    justify-content: left;
+
+    width:100%;
+    border-radius:0;
     max-height: ${({ isOpen }) => (isOpen ? '200px' : '0')};
     overflow: hidden;
     transition: max-height 0.5s ease-in-out;
@@ -73,13 +78,17 @@ const MenuItem = styled(Link)`
 `;
 
 const ToggleButton = styled.button`
-
-  background: none;
-  border: none;
+  width: 100%;
+  background-color: rgba(0, 186, 255, .4);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   color: black;
   font-size: 2rem;
   align:right;
   cursor: pointer;
+  padding-block: 1px;
+  padding-inline: 6px;
+  border-width: 0px;
   @media (min-width: 769px) {
     display: none;
   }

@@ -4,7 +4,6 @@ const Payment = () => {
   return (
     <div>
       <h2>Payment</h2>
-      <p>Payment details and form...</p>
     </div>
   );
 };

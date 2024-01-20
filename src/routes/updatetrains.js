@@ -1,3 +1,8 @@
+/*This code is additional just for adding data in trains collection in firebse
+*/
+
+
+
 import { initializeApp } from 'firebase/app';
 import { getFirestore, collection, addDoc, query, where, getDocs } from 'firebase/firestore';
 import {db,app} from '../config/firebase';
