@@ -269,15 +269,20 @@ export const NavItem = styled(Link)`
   }
 `;
 export const ProfileButton = styled.button`
+  display: inline-block;
   width: 40px;
   height: 40px;
   border-radius: 50%;
   overflow: hidden;
-  cursor: pointer;
+  padding-block: 0px;
+  padding-inline: 0px;
+  border-width: 0px 
 `;
 
 export const ProfileImage = styled.img`
   width: 100%;
-  height: 100%;
+  height: auto;
   object-fit: cover;
+  border-radius: 50%;
+  
 `;

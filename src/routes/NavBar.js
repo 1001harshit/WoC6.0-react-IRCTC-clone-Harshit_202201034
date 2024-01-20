@@ -1,19 +1,14 @@
 
 import React, {useState,useEffect} from 'react';
 import { useAuthentication } from './auth';
-import { auth } from '../config/firebase';
+import { auth , db} from '../config/firebase';
 import { onAuthStateChanged } from 'firebase/auth';
 import { Link, useLocation } from 'react-router-dom';
-import Auth from './auth';
 import * as Components from '../components';
-import { db } from '../config/firebase';
 import { collection, getDocs, where, query, doc, getDoc } from 'firebase/firestore';
 import styled, {StyleSheetManager} from 'styled-components';
 
-const Menu =styled.div`
-  top: 0;
 
-`
 
 
 
@@ -21,15 +16,15 @@ const MenuBar = styled.div`
   position: sticky;
   top: 0;
   margin: 50px auto;
-  z-index: 1000; /* Adjust the z-index as needed */
+  z-index: 1000;
   border-radius: 25px;
   height: fit-content;
   display: flex;
-  justify-content: center; /* Center the content horizontally */
-  background-color: rgba(0, 0, 0, .4);
-  -webkit-backdrop-filter: blur(10px);
+  justify-content: center;
+  background-color: rgba(0, 186, 255, .4);
   backdrop-filter: blur(10px);
-  width: 60%; /* Make the navigation bar full width */
+  -webkit-backdrop-filter: blur(10px);
+  width: 60%;
 
   @media (max-width: 768px) {
     flex-direction: column;
@@ -69,11 +64,11 @@ const MenuItem = styled(Link)`
 
   &:hover {
     &::before {
-      background: linear-gradient(to bottom, #e8edec, #d2d1d3);
+      background: #112540;
       box-shadow: 0px 3px 20px 0px black;
-      transform: scale(1.2);
+      transform: scale(1);
     }
-    color: black;
+    color: white;
   }
 `;
 
